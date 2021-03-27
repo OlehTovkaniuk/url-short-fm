@@ -40,11 +40,10 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- SCSS
+- [Styled Components](https://styled-components.com/) - For styles
 - CSS Flexbox
-- CSS Grid
-- Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
+- [React Router](https://reactrouter.com/) - for site navigation
 
 
 ### What I learned

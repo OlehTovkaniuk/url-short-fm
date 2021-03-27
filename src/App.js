@@ -1,4 +1,4 @@
-import './App.scss';
+import Navbar from './components/nav/Navbar';
 import Home from './components/home/Home';
 import Features from './components/features/Features';
 import Pricing from './components/pricing/Pricing';
@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Navbar />
         <Switch>
           <Route exact path="/">
             <Home />

@@ -1,10 +1,17 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
+
+const WrapperDiv = styled.div`
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 1115px;
+`;
 
 export default function Home() {
     return (
-        <div>
-            <h1>Hello world</h1>
-            <p>Lorem ipsum, bitches!</p>
-        </div>
+        <WrapperDiv>
+            <h1>Homepage</h1>
+            <p>Lorem ipsum</p>
+        </WrapperDiv>
     )
 }

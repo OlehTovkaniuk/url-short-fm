@@ -14,6 +14,8 @@ export default function Pricing() {
     return (
         <WrapperDiv>
             <h2 style={{ textAlign: 'center' }}>Pricing page</h2>
+            <p style={{ maxWidth: '550px', margin: '2em auto' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minima quia, recusandae fugiat consequuntur itaque labore et saepe nostrum aliquam ipsa iste earum sit tenetur non autem numquam blanditiis placeat!</p>
+            <p style={{ maxWidth: '550px', margin: '2em auto' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minima quia, recusandae fugiat consequuntur itaque labore et saepe nostrum aliquam ipsa iste earum sit tenetur non autem numquam blanditiis placeat!</p>
         </WrapperDiv>
     )
 }

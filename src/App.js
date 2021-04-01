@@ -2,7 +2,7 @@ import Navbar from './components/nav/Navbar';
 import Home from './components/home/Home';
 import Features from './components/features/Features';
 import Pricing from './components/pricing/Pricing';
-import Resourses from './components/resourses/Resourses';
+import Resources from './components/resources/Resources';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { useState, useEffect } from 'react';
 
@@ -40,8 +40,8 @@ function App() {
           <Route path="/pricing">
             <Pricing />
           </Route>
-          <Route path="/resourses">
-            <Resourses />
+          <Route path="/resources">
+            <Resources />
           </Route>
         </Switch>
       </BrowserRouter>

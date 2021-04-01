@@ -7,10 +7,10 @@ const WrapperDiv = styled.div`
     max-width: 1115px;
 `;
 
-export default function Resourses() {
+export default function Resources() {
     return (
         <WrapperDiv>
-            <p>Resources page</p>
+            <h2 style={{ textAlign: 'center' }}>Resources page</h2>
         </WrapperDiv>
     )
 }

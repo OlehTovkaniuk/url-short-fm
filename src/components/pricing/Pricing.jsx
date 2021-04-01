@@ -10,7 +10,7 @@ const WrapperDiv = styled.div`
 export default function Pricing() {
     return (
         <WrapperDiv>
-            <p>Pricing page</p>
+            <h2 style={{ textAlign: 'center' }}>Pricing page</h2>
         </WrapperDiv>
     )
 }

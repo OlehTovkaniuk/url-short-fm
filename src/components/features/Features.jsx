@@ -10,7 +10,7 @@ const WrapperDiv = styled.div`
 export default function Features() {
     return (
         <WrapperDiv>
-            <p>Features page</p>
+            <h2 style={{ textAlign: 'center' }}>Features page</h2>
         </WrapperDiv>
     )
 }

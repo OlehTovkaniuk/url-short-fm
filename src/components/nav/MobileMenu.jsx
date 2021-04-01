@@ -17,7 +17,7 @@ const StyledList = styled.ul`
 `
 
 export default function MobileMenu({ isOpen, isMobile, close }) {
-    const wrapperDivStyles = {
+    const menuBgStyles = {
         display: isMobile.display,
         position: 'absolute',
         top: isOpen.top,
@@ -34,7 +34,7 @@ export default function MobileMenu({ isOpen, isMobile, close }) {
     }
 
     return (
-        <div style={wrapperDivStyles}>
+        <div style={menuBgStyles}>
             <StyledList>{navList.map(item => <ListItem name={item.name} key={item.id} link={item.link} close={close} />)}</StyledList>
             <LoginButton />
             <Button text='Sign Up' />

@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
+
+const WrapperDiv = styled.div`
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 1115px;
+`;
 
 export default function Pricing() {
     return (
-        <div>
+        <WrapperDiv>
             <p>Pricing page</p>
-        </div>
+        </WrapperDiv>
     )
 }

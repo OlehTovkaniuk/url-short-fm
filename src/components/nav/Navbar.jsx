@@ -1,8 +1,9 @@
-import React from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
 import Logo from './Logo';
-import Navigation from './Navigation';
-import MenuBtn from './MenuBtn';
+import DesktopMenu from './DesktopMenu';
+import MenuIcon from './MenuIcon';
+import MobileMenu from './MobileMenu';
 
 const WrapperDiv = styled.div`
     padding: 15px;
@@ -16,14 +17,38 @@ const StyledHeader = styled.header`
     justify-content: space-between;
 `;
 
-export default function Navbar() {
+export default function Navbar({ showMenuBool }) {
+    const [open, setOpen] = useState(false);
+
+    function handleToggle(e) {
+        e.preventDefault();
+        setOpen(!open);
+    }
+
+    function closeMenu() {
+        setOpen(false);
+    }
+
+    const showMenuAsList = {
+        display: showMenuBool ? 'flex' : 'none'
+    }
+    const showMenuAsIcon = {
+        display: showMenuBool ? 'none' : 'block'
+    }
+    const isMobile = {
+        display: showMenuBool ? 'none' : 'flex'
+    }
+    const isOpen = {
+        top: open ? '5em' : '-50vh'
+    }
 
     return (
         <WrapperDiv>
             <StyledHeader>
                 <Logo />
-                <MenuBtn />
-                <Navigation />
+                <MobileMenu isOpen={isOpen} isMobile={isMobile} close={closeMenu} />
+                <MenuIcon toggle={handleToggle} showIcon={showMenuAsIcon} />
+                <DesktopMenu showList={showMenuAsList} />
             </StyledHeader>
         </WrapperDiv>
     )

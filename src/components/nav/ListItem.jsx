@@ -10,8 +10,8 @@ const StyledItem = styled.li`
     }
 `;
 
-export default function ListItem({ name, link }) {
+export default function ListItem({ name, link, close }) {
     return (
-        <StyledItem><Link to={link}>{name}</Link></StyledItem>
+        <StyledItem><Link to={link} onClick={close}>{name}</Link></StyledItem>
     )
 }

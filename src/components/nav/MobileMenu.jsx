@@ -13,8 +13,18 @@ const StyledList = styled.ul`
 
     li {
         margin: 1em 0;
+
+        a {
+            color: white;
+            font-weight: 700;
+        }
     }
 `
+
+const StyledLoginButton = styled(LoginButton)`
+    font-size: 1.3em;
+    color: white;
+`;
 
 export default function MobileMenu({ isOpen, isMobile, close }) {
     const menuBgStyles = {

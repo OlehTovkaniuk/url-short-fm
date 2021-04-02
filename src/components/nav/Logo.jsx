@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
-import LogoImg from '../../assets/logo.svg';
+import LogoImg from '../../assets/logo/logo.svg';
 
 const StyledLogoDiv = styled.div`
         transform: translateY(0.3em);

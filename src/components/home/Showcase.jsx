@@ -25,7 +25,7 @@ const WrapperContent = styled.div`
 `;
 
 const StyledHeading = styled.h1`
-    font-size: 2.5em;
+    font-size: 2.2em;
     text-align: center;
     max-width: 80%;
     margin: 45vh auto 0;

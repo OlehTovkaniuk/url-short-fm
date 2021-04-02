@@ -43,7 +43,7 @@ export default function Navbar({ showMenuBool }) {
         display: showMenuBool ? 'none' : 'flex'
     }
     const isOpen = {
-        top: open ? '5em' : '-60vh'
+        top: open ? '5em' : '-80%'
     }
 
     return (

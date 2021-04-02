@@ -53,5 +53,5 @@ Users should be able to:
 
 ### Useful resources
 
-- [3 Ways To Implement Responsive Design In Your React App by Joe Keohan](https://itnext.io/3-ways-to-implement-responsive-design-in-your-react-app-bcb6ee7eb424) - I used the inline styles approach from this article to make the webpage responsive. I believe this is more straightforward way than media queries because with inline styles I manage responsivenes by using useState and useEffect hooks and passing the state of the screen to any component what I want without need to repeat 'media screen' for every div which I want to change.
+- ["3 Ways To Implement Responsive Design In Your React App" by Joe Keohan](https://itnext.io/3-ways-to-implement-responsive-design-in-your-react-app-bcb6ee7eb424) - I used the inline styles approach from this article to make the webpage responsive. I believe this is more straightforward way than media queries because with inline styles I manage responsivenes by using useState and useEffect hooks and passing the state of the screen to any component what I want without need to repeat 'media screen' for every div which I want to change.
 

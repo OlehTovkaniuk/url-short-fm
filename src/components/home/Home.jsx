@@ -6,6 +6,8 @@ const WrapperDiv = styled.div`
     padding: 15px;
     margin: 0 auto;
     max-width: 1115px;
+    position: relative;
+    overflow-x: hidden;
 
     @media screen and (max-width: 1023px){
         max-width: 550px

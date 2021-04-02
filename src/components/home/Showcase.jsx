@@ -4,7 +4,6 @@ import Illustration from '../../assets/illustrations/illustration-working.svg';
 import Button from '../Button';
 
 const Mainer = styled.div`
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,9 +12,10 @@ const WrapperImg = styled.div`
 
 `;
 const StyledImg = styled.img`
-    height: 50vh;
-    position: relative;
-    left: 15%;
+    height: 40vh;
+    position: absolute;
+    top: 0;
+    left: 10%;
 `;
 
 const WrapperContent = styled.div`
@@ -28,12 +28,12 @@ const StyledHeading = styled.h1`
     font-size: 2.5em;
     text-align: center;
     max-width: 80%;
-    margin: 1em auto 0;
+    margin: 45vh auto 0;
     line-height: 1em
 `;
 
 const StyledText = styled.p`
-    margin: 1em 0;
+    margin: 1em 0 1.5em;
     color: #9e9aa7;
     text-align: center;
 `;

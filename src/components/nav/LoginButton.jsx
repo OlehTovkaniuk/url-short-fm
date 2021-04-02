@@ -13,8 +13,8 @@ const StyledButton = styled.button`
     cursor: pointer;
 `;
 
-export default function LoginButton() {
+export default function LoginButton({ className }) {
     return (
-        <StyledButton> Login</StyledButton>
+        <StyledButton className={className}>Login</StyledButton>
     )
 }

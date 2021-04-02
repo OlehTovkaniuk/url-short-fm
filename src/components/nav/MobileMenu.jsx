@@ -5,6 +5,12 @@ import Button from '../Button';
 import LoginButton from './LoginButton';
 import { navList } from './navLinksArr';
 
+const StyledLoginButton = styled(LoginButton)`
+    font-size: 1em;
+    font-weight: 700;
+    color: white;
+`;
+
 const StyledList = styled.ul`
     list-style: none;
     display: flex;
@@ -20,11 +26,6 @@ const StyledList = styled.ul`
         }
     }
 `
-
-const StyledLoginButton = styled(LoginButton)`
-    font-size: 1.3em;
-    color: white;
-`;
 
 export default function MobileMenu({ isOpen, isMobile, close }) {
     const menuBgStyles = {
@@ -47,7 +48,7 @@ export default function MobileMenu({ isOpen, isMobile, close }) {
     return (
         <div style={menuBgStyles}>
             <StyledList>{navList.map(item => <ListItem name={item.name} key={item.id} link={item.link} close={close} />)}</StyledList>
-            <LoginButton />
+            <StyledLoginButton />
             <Button text='Sign Up' />
         </div>
     )
